@@ -1,4 +1,4 @@
-package codipetclinic;
+package com.codihub.codipetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

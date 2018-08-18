@@ -1,62 +1,141 @@
-/target/
-!.mvn/wrapper/maven-wrapper.jar
+######################
+# Project Specific
+######################
+/build/www/**
+/src/test/javascript/coverage/
+/src/test/javascript/PhantomJS*/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+######################
+# Node
+######################
+/node/
+node_tmp/
+node_modules/
+npm-debug.log.*
+
+######################
+# SASS
+######################
+.sass-cache/
+
+######################
+# Eclipse
+######################
+*.pydevproject
 .project
-.settings
-.springBeans
-.sts4-cache
+.metadata
+tmp/
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.factorypath
+/src/main/resources/rebel.xml
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# External tool builders
+.externalToolBuilders/**
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+######################
+# Intellij
+######################
+.idea/
 *.iml
+*.iws
 *.ipr
+*.ids
+*.orig
 
-### NetBeans ###
-/nbproject/private/
+######################
+# Visual Studio Code
+######################
+.vscode/
+
+######################
+# Maven
+######################
+/log/
+/target/
+
+######################
+# Gradle
+######################
+.gradle/
 /build/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
 
-#### Mac OSX
+######################
+# Package Files
+######################
+*.jar
+*.war
+*.ear
+*.db
+
+######################
+# Windows
+######################
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+######################
+# Mac OSX
+######################
 .DS_Store
 .svn
 
-### Thumbnails
+# Thumbnails
 ._*
 
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
 
-### Directories
+######################
+# Directories
+######################
 /bin/
 /deploy/
 
-### Graddle Wrapper
-!gradle/wrapper/gradle-wrapper.jar
+######################
+# Logs
+######################
+*.log
 
-### Maven Wrapper
-!.mvn/wrapper/maven-wrapper.jar
-
-### Others
+######################
+# Others
+######################
 *.class
 *.*~
 *~
 .merge_file*
 
-### Logs
-*.log
+######################
+# Gradle Wrapper
+######################
+!gradle/wrapper/gradle-wrapper.jar
 
-### Windows image file caches
-Thumbs.db
+######################
+# Maven Wrapper
+######################
+!.mvn/wrapper/maven-wrapper.jar
 
-### Folder config file
-Desktop.ini
-
+######################
+# ESLint
+######################
+.eslintcache
