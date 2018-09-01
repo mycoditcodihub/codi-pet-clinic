@@ -2,10 +2,11 @@ package com.codihub.codipetclinic.services.map;
 
 import com.codihub.codipetclinic.model.Vet;
 import com.codihub.codipetclinic.services.CrudService;
+import com.codihub.codipetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
