@@ -1,11 +1,12 @@
 package com.codihub.codipetclinic.services.map;
 
 import com.codihub.codipetclinic.model.Owner;
-import com.codihub.codipetclinic.services.CrudService;
 import com.codihub.codipetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

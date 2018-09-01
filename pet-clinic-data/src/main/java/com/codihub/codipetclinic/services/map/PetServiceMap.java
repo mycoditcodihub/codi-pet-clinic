@@ -1,11 +1,12 @@
 package com.codihub.codipetclinic.services.map;
 
 import com.codihub.codipetclinic.model.Pet;
-import com.codihub.codipetclinic.services.CrudService;
 import com.codihub.codipetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

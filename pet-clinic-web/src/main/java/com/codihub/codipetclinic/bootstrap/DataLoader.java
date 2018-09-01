@@ -4,8 +4,6 @@ import com.codihub.codipetclinic.model.Owner;
 import com.codihub.codipetclinic.model.Vet;
 import com.codihub.codipetclinic.services.OwnerService;
 import com.codihub.codipetclinic.services.VetService;
-import com.codihub.codipetclinic.services.map.OwnerServiceMap;
-import com.codihub.codipetclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +13,11 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader(){
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService){
+//        ownerService = new OwnerServiceMap();
+//        vetService = new VetServiceMap();
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -55,4 +55,5 @@ public class DataLoader implements CommandLineRunner {
 
         System.out.println("Loaded Vets....");
     }
+
 }
