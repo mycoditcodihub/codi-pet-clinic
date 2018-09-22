@@ -5,8 +5,9 @@
     <title>List of Pet Owners</title>
 </head>
 <body>
-<!-- Note: we are telling thymeleaf that the id value "owner" is of type Owner.
+<!-- Note: we are telling intellij's intellisense that the id value "owner" is of type Owner.
      Also note that the id value we are using in "<tr th:each="owner : ${owners}">"
+     This is strictly for intellij. It does not affect how thymeleaf works at all
 -->
 <!--/@thymesVar id="owner" type="com.codihub.codipetclinic.model.Owner"*/-->
     <h1 th:text="'List of Owners'">Owners List...</h1>
@@ -22,7 +23,7 @@
         <tbody>
         <tr th:each="owner : ${owners}">
             <td th:text="${owner.id}">1</td>
-            <td th:text="${owner.firstName}">Hoe</td>
+            <td th:text="${owner.firstName}">Joe</td>
             <td th:text="${owner.lastName}">Buck</td>
         </tr>
         </tbody>
