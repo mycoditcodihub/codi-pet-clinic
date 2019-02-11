@@ -48,7 +48,7 @@
                         <!--<checkModificationExclude>**</checkModificationExclude>-->
                     <!--</checkModificationExcludes>-->
                     <!-- If you look at the Lifecycle, you will see that deploy is the default since Maven is going to run all the goals before getting to deploy.
-                         In order to override it and prevent Mave from running deploy, we would add the goals as install-->
+                         In order to override it and prevent Maven from running deploy, we would add the goals as install-->
                     <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
